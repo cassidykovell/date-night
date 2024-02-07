@@ -1,0 +1,39 @@
+:root {
+    --b: black;
+    --w: white;
+}
+
+* {
+    font-family: 'Yellowtail', cursive;
+}
+
+.content-container {
+    display: flex;
+    margin: 1em;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    background: var(--b);
+    color: var(--w);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.vl {
+    border-left: 6px solid var(--b);
+    padding: 1em;
+}
+
+button{
+    background: var(--b);
+    color: var(--w);
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    font-size: 30px;
+}
