@@ -83,3 +83,49 @@ h2 {
     border-radius: 15px;
     margin: 20px;
 }
+
+#recipe-styling {
+    display: flex; 
+    border-left: 6px solid var(--b);
+    padding: 1em; 
+}
+
+#drink-recipe {
+    display: flex;
+    background-color: var(--g);
+    border-radius: 20px;
+    margin: 3px; 
+    flex-direction: column;
+}
+
+#food-recipe {
+    display: flex;
+    background-color: var(--g);
+    border-radius: 20px;
+    margin: 3px; 
+    flex-direction: column;
+}
+
+#drink-recipe h2 {
+    font-family:'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#food-recipe h2 {
+    font-family:'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#drink-recipe img {
+   align-self: center;
+   height: 300px;
+   width: 300px; 
+   padding-bottom: 30px;
+}
+
+#food-recipe img {
+    align-self: center;
+    height: 300px;
+    width: 300px; 
+    padding-bottom: 30px;
+ }
