@@ -40,6 +40,7 @@ button{
     font-size: 20px;
     margin: 20px;
     width: 300px;
+    text-decoration: none;
 }
 
 h2 {
@@ -59,7 +60,22 @@ h2 {
     padding: 1em;
 }
 
-
+.ingredients-btn {
+    color: rgb(147, 1, 1);
+    padding: 10px;
+    width: auto;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 50px;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: 0 0 50px;
+    transition: 0.3s #9e0000;
+    transform: scale(1.03);
+    background: black;
+    font-weight: 900;
+    border: none;
+}
 
 #img2 {
     width: 300px;
