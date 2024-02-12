@@ -1,30 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(/assets/images/food-cocktail-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Tangerine", cursive;
-    font-weight: 900 bold;
-    font-style: normal;
+    
 }
 
-h1 {
-    font-size: 60px;
-    color: rgb(185, 0, 0);
-}
-
-button {
+.home-btn {
+    float: left;
+    padding: 10px 10px;
+    font-size: 30px;
+    text-align: center;
     cursor: pointer;
     color: rgb(185, 0, 0);
     background-color: black;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 0 0 50px;
     transition: 0.3s #710101;
     transform: scale(1.03);
 }
 
 
-button:hover {
+.home-btn:hover {
     cursor: pointer;
     box-shadow: 0 0 5px rgb(185, 0, 0),
                 0 0 25px rgb(185, 0, 0),
@@ -32,6 +35,9 @@ button:hover {
                 0 0 200px rgb(185, 0, 0);
 }
 
+audio {
+    float: right;
+}
 audio::-webkit-media-controls-play-button {
     background-color: #710101;
     border-radius: 50%;
@@ -52,13 +58,16 @@ audio::-webkit-media-controls-timeline {
     color: rgb(185, 0, 0);
 }
 
-.wrapper {
-    max-width: 600px;
-    margin: 100px auto 0 auto;   
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.top {
+    padding-top: 60px;
     text-align: center;
+    background: transparent;
+    color: white;
+    border-radius: 15px;
+    font-size: 70px;
+    width: 100%;
+    text-decoration: none;
+    font-family: "Tangerine", cursive;
+    font-weight: 900 bold;
+    font-style: normal;
 }
