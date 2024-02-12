@@ -53,7 +53,7 @@ audio::-webkit-media-controls-timeline {
 }
     
 .fa-star {
-    padding: 25px;
+    padding: 10px;
     size: 10px;
     color: rgb(185, 0, 0);
 }
@@ -70,4 +70,46 @@ audio::-webkit-media-controls-timeline {
     font-family: "Tangerine", cursive;
     font-weight: 900 bold;
     font-style: normal;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: 600px 665px;
+    }
+    .home-btn {
+        font-size: 20px;
+        width: auto;
+    }
+    .top {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 601px) {
+    body {
+        background-image: 600px 665px;
+    }
+    .home-btn {
+        font-size: 30px;
+        width: auto;
+    }
+    .top {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1875px) {
+    .top {
+        font-size: 70px;
+    }
+    #drink-container h2 {
+        font-size: 30px;
+    }
+    #meal-container h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width) {
+    
 }
