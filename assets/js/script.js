@@ -5,8 +5,10 @@ var SiteOpenerDesc = document.getElementById('content-container-right');
 var leftSideContent = document.getElementById('content-container-left');
 var description = document.getElementById('description');
 var dinnerServed = document.getElementById('dinner-served');
+var recipeContainer = document.getElementById('button-container');
 
 dinnerServed.style.display = "none";
+recipeContainer.style.display = "none";
 
 function saveDrinkDataToLocalStorage(drinkName, drinkPhoto, drinkRecipe) {
   var drinkData = {
@@ -30,7 +32,7 @@ function saveFoodDataToLocalStorage( mealName, mealPhoto, mealRecipe) {
 localStorage.setItem('MealRecipeData', JSON.stringify(foodData));
 }
 
-function generateDrink () {
+function generateDrink() {
   fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
     .then(function (response) {
       return response.json();
@@ -71,12 +73,14 @@ function generateFood() {
     });
   };
 
+
 generateButton.addEventListener('click', function() {
   generateDrink();
   generateFood();
   generateButton.style.display = 'none';
   description.style.display = 'none';
   dinnerServed.style.display = 'block';
+  recipeContainer.style.display ='flex';
   var tryAgainFood = document.createElement('button');
   tryAgainFood.textContent = ('Generate New Food Recipe');
 
@@ -111,7 +115,7 @@ generateButton.addEventListener('click', function() {
   })
 
   tryAgainFood.addEventListener('click', function(){
-    fetch('http://www.themealdb.com/api/json/v1/1/random.php')
+    fetch('https://www.themealdb.com/api/json/v1/1/random.php')
   .then(function (response) {
     return response.json();
   })
@@ -127,4 +131,4 @@ generateButton.addEventListener('click', function() {
       );
   })
   })
-})
+});

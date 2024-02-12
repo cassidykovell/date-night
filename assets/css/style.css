@@ -81,7 +81,7 @@ h2 {
     padding: 120px;
     width: 500px;
     border-radius: 15px;
-    margin: 20px;
+    margin: 20px 0px 0px 0px;
 }
 
 #recipe-styling {
@@ -125,7 +125,48 @@ h2 {
 
 #food-recipe img {
     align-self: center;
-    height: 300px;
-    width: 300px; 
+    font-family:'Shadows Into Light', cursive;
     padding-bottom: 30px;
  }
+
+#button-container {
+    display: flex; 
+    border-left: 6px solid var(--b);
+    padding: 1em; 
+    justify-content: center;
+}
+
+a {
+    font-family:'Shadows Into Light', cursive;
+    color: var(--w);
+    text-decoration: none;
+}
+
+p {
+    font-family:'Shadows Into Light', cursive; 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    color: var(--w);
+}
+
+img {
+    justify-content: center;
+    height: 300px;
+    width: 300px; 
+}
+
+#drink-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#meal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
