@@ -85,6 +85,7 @@ h2 {
     width: 500px;
     border-radius: 15px;
     margin: 20px 0px 0px 0px;
+    color: var(--b);
 }
 
 #recipe-styling {
@@ -152,13 +153,8 @@ a {
 
 p {
     font-family:'Shadows Into Light', cursive; 
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 40px;
-    color: var(--w);
+    font-size: 20px;
+    color: var(--b);
 }
 
 img {
@@ -178,63 +174,70 @@ img {
     flex-direction: column;
     align-items: center;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     #recipe-styling {
-        display: inline;
+        border-left: none;
+        display: flex;
+        justify-content: center;
     }
-    p {
-    font-size: 16px;
-    color: var(--w);
- }
-    h1 {
-        font-size: 30px;
+    .vl {
+        border-left: none;
     }
-}
-
-@media (min-width: 601px) {
-    #recipe-styling {
-        display: inline;
-    }
-    p {
-        font-size: 16px;
-        color: var(--w);
+    #button-container {
+        border-left: none;
     }
 }
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 30px;
-    }
-    button {
-        width: 200px;
-    }
-}
-
-@media (min-width: 900px) {
-    h1 {
-        font-size: 40px;
-    }
-    button {
-        width: 250px;
-    }
-}
-
-@media (min-width: 1875px) {
-    h1 {
-        font-size: 50px;
-    }
-    button {
-        width: 300px;
-    }
+@media (max-width: 768px) {
     #recipe-styling {
         display: flex;
+        flex-wrap: wrap;
     }
-    p {
-        font-size: 20px;
+    h2 {
+        width: 300px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px;
+        width: 250px;
+    }
+    h1 {
+        font-size: 35px;
+        
+    }
+    #description {
+        width: auto;
+    }
+    #img1 {
+        height: 80px;
+        width: 80px;
+    }
+    .vl {
+        padding: none;
     }
 }
 
-@media (max-width) {
-
+@media (max-width: 425px) {
+    #recipe-styling {
+        border-left: none;
+        display: flex;
+        justify-content: center;
+    }
+    .vl {
+        border-left: none;
+    }
+    #button-container {
+        border-left: none;
+    }
+    #description {
+        padding: 100;
+    }
 }
+
+@media (max-width: 1024px) {
+    #recipe-styling {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
