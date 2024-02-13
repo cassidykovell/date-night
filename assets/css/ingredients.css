@@ -3,66 +3,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-image: url(/assets/images/food-cocktail-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     
 }
 
 .home-btn {
+    width: auto;
     float: left;
-    padding: 10px 10px;
-    font-size: 30px;
+    padding: 0 10px 0 10px;
+    margin: 0;
+    font-size: 10px;
     text-align: center;
     cursor: pointer;
-    color: rgb(185, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: black;
     border-radius: 30px;
     box-shadow: 0 0 50px;
-    transition: 0.3s #710101;
+    transition: 0.3s #a80303;
     transform: scale(1.03);
-}
-
-
-.home-btn:hover {
-    cursor: pointer;
-    box-shadow: 0 0 5px rgb(185, 0, 0),
-                0 0 25px rgb(185, 0, 0),
-                0 0 50px rgb(185, 0, 0),
-                0 0 200px rgb(185, 0, 0);
-}
-
-audio {
-    float: right;
-}
-audio::-webkit-media-controls-play-button {
-    background-color: #710101;
-    border-radius: 50%;
-}
-
-audio::-webkit-media-controls-panel {
-    background-color: #710101;
-}
-
-audio::-webkit-media-controls-timeline {
-    border-radius: 40%;
-    background-color: #710101;
 }
     
 .fa-star {
     padding: 10px;
     size: 10px;
-    color: rgb(185, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .top {
     padding-top: 60px;
     text-align: center;
     background: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 15px;
     font-size: 70px;
     width: 100%;
@@ -72,20 +42,21 @@ audio::-webkit-media-controls-timeline {
     font-style: normal;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
     body {
-        background-image: 600px 665px;
+        background-size: cover;
     }
     .home-btn {
+        font-size: 16px;
+        width: auto;
+        padding: 5px;
+    }
+    .top {
         font-size: 20px;
-        width: auto;
-    }
-    .top {
-        font-size: 30px;
     }
 }
 
-@media (min-width: 601px) {
+@media (max-width: 768px) {
     body {
         background-image: 600px 665px;
     }
@@ -98,7 +69,7 @@ audio::-webkit-media-controls-timeline {
     }
 }
 
-@media (min-width: 1875px) {
+@media (min-width: 1024px) {
     .top {
         font-size: 70px;
     }
@@ -111,5 +82,5 @@ audio::-webkit-media-controls-timeline {
 }
 
 @media (max-width) {
-    
+
 }
